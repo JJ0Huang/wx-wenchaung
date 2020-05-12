@@ -1,0 +1,54 @@
+/* pages/content/user/back/back.wxss */
+@import '../../../../app.wxss';
+.con{
+  width: 750rpx;
+  height: 100vh;
+  background: #f2f2f2;
+  font-family: 'SimHei'
+}
+.image{
+	width: 160rpx;
+	height: 160rpx;
+	border-radius: 80rpx;
+}
+.box_user{
+	width: 750rpx;
+	text-align: center;
+	margin-bottom: 30rpx;
+  background: #b3b3b3;
+  padding: 40rpx 0rpx;
+  color: white;
+  font-weight: bold;
+}
+.box{
+  background: #FFFFFF;
+  width: 694rpx;
+  height: 92rpx;
+  border-radius: 30rpx;
+  text-align: center;
+  line-height: 92rpx;
+  margin-top: 30rpx;
+  color: #333333;
+}
+#myorder{
+  width: 625rpx;
+  height: 85rpx;
+  line-height: 85rpx;
+  border-bottom: 1rpx solid #999999;
+  text-align: left;
+  position: relative;
+  left: 50%;
+  margin-left: -300rpx;
+  margin-top: 10rpx;
+}
+#icons_box{
+  width: 625rpx;
+  margin-top: 30rpx;
+  position: relative;
+  left: 50%;
+  margin-left: -312.5rpx;
+}
+.font_99{
+  font-size:25rpx;
+  color:#999999;
+}

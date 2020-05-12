@@ -1,0 +1,11 @@
+<view class="con">
+  <view class="left column font">
+    <view>{{text1}}</view>
+    <view>{{text2}}</view>
+    <view>{{text3}}</view>
+    <view wx:if="text4!=''">{{text4}}</view>
+  </view>
+  <view class="right column" bindtap="changeStatus">
+    <view style="color:{{status_color}}">{{status}}</view>
+  </view>
+</view>

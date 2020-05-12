@@ -1,0 +1,15 @@
+<view>
+	<goods_item
+		style="float:{{index%2==0?'left':'right'}};border-bottom:1rpx solid #b3b3b3;margin:{{index%2==0?'0 0 0 28rpx':'0 28rpx 0 0'}}"
+		wx:for="{{goods}}"
+		wx:key="index"
+    g_imageFileID="{{item.g_imageFileID[0]}}"
+		g_id="{{item.g_id}}"
+		g_name="{{item.g_name}}"
+		g_price="{{item.g_price}}">
+	</goods_item>
+	<tarBar
+		tarBarList="{{tarBarList}}"
+		w="250">
+	</tarBar>
+</view>

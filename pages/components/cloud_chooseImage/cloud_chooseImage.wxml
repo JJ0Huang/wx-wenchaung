@@ -1,0 +1,19 @@
+<view class="con">
+  <view
+    style="float:left"
+    wx:for="{{images}}"
+    wx:key="index">
+    <image
+      src="{{item}}"
+      mode="aspectFit">
+    </image>
+  </view>
+  <view
+    style="float:left">
+    <image
+      src="{{BaseImage}}"
+      mode="aspectFit"
+      bindtap="chooseimage">
+    </image>
+  </view>
+</view>

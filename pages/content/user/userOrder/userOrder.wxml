@@ -1,0 +1,7 @@
+<view>
+  <block wx:for="{{order}}" wx:key="index">
+    <order_box text1="商品: {{g_name[index]}}" text2="数量: {{item.g_num}}" text3="小计: ￥{{item.sub_total}}" text4="" status="{{item.status}}" wx:if="{{item.status==status}}">
+    </order_box>
+    <button bindtap="ConfirmOrder" data-oid="{{item.o_id}}" wx:if="{{item.status=='待收货'&&status=='待收货'}}">确认收货</button>
+  </block>
+</view>

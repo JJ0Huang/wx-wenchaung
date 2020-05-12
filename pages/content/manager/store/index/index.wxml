@@ -1,0 +1,9 @@
+<view class="con">
+  <view>
+    <good_row wx:for="{{goods}}" wx:key="index"
+     good="{{item}}" img_src="{{TempSrc[index]}}"
+     data-g_id="{{item.g_id}}" bindtap="toEdit">
+    </good_row>
+  </view>
+  <view class="Tarbar" bindtap="toAddGood">添加商品</view>
+</view>

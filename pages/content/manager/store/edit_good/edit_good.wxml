@@ -1,0 +1,43 @@
+<view class="con">
+  <view>
+    <view class="box row">
+      <label>标题</label>
+      <input bindinput="e_name" value="{{good.g_name}}"></input>
+    </view>
+    <view class="box row">
+      <label>价格</label>
+      <input type="digit" value="{{g_price_show}}" bindinput="e_price"></input>
+    </view>
+    <view class="box" style="height:600rpx;">
+      <label>商品描述</label>
+      <textarea maxlength="-1" bindinput="e_describe" value="{{good.g_describe}}"></textarea>
+    </view>
+  </view>
+  <view class="row" style="float:left;margin-top:30rpx;width:750rpx;text-align:center;">
+    <view class="box_btn">
+      <button bindtap="delete_good" style="color:#ffffff;background:#c1272d">删除</button>
+    </view>
+    <view class="box_btn">
+      <button type="primary" bindtap="save_good">保存</button>
+    </view>
+  </view>
+
+  <!-- <view class="image_box">
+    <cloud_chooseImage bind_getFileID="getFileID" BaseImage="../../../../../../../icon/photo.png">
+    </cloud_chooseImage>
+  </view>
+  <view class="box row">
+    <label>标题</label>
+    <input bindinput="e_name"></input>
+  </view>
+  <view class="box row">
+    <label>价格</label>
+    <input bindinput="e_price" placeholder="以人名币为单位"></input>
+  </view>
+  <view class="box" style="height:500rpx;">
+    <label>商品描述</label>
+    <textarea maxlength="-1" bindinput="e_describe">
+    </textarea>
+  </view>
+  <view id="confirm" bindtap="addGood">上架出售</view> -->
+</view>

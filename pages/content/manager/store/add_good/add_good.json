@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "cloud_chooseImage":"../../../../components/cloud_chooseImage/cloud_chooseImage"
+  }
+}

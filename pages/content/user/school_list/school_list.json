@@ -1,0 +1,8 @@
+{
+	"component": true,
+	"usingComponents": {
+    "row_box": "../../components/row_box/row_box",
+		"tarBar": "../../../components/tarBar/tarBar",
+    "swiper_box": "../../../components/swiper_box/swiper_box"
+	}
+}

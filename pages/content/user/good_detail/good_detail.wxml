@@ -1,0 +1,48 @@
+<view class="con">
+	<!-- 自动轮播 -->
+	<swiper
+		autoplay="true"
+		interval="3000"
+		circular="true">
+		<swiper-item
+			wx:for="{{img_array}}"
+			wx:key="index">
+			<image
+				src="{{item.src}}"
+				data-index="{{index}}"
+				onerror="imgNotFound"
+        mode="aspectFit">
+			</image>
+		</swiper-item>
+	</swiper>
+	<!-- 内容 -->
+	<view class="box box1 column">
+    <view class="money">￥{{good.g_price==undefined?'111':good.g_price}}</view>
+		<view>{{good.g_name==undefined?'商品名':good.g_name}}</view>
+	</view>
+  <view class="box box2 column">
+    <view style="margin-bottom:27rpx;">商品评价</view>
+    <view>{{good.g_assess==undefined?'商品暂无评价~':good.g_assess}}</view>
+  </view>
+  <view class="box column">
+    <view style="margin-bottom:27rpx;">商品详细</view>
+    <view>{{good.g_describe==undefined?'111':good.g_describe}}</view>
+  </view>
+  <!-- 低栏 -->
+  <view class="tarbar_box row">
+    <view class="row" style="width:300rpx;">
+      <image
+        src="../../../../icon/service.png"
+        style="width:50rpx;margin:21rpx 26rpx 0 0" mode="widthFix">
+      </image>
+      <view>联系客户</view><view style="margin:0rpx 20rpx;">|</view>
+    </view>
+    <view 
+      class="tarbar_item" 
+      style="margin-right:16rpx;background:#fd780f" 
+      bindtap="addincart">
+      加入购物车
+    </view>
+    <view class="tarbar_item" style="background:#c1272d">立即购买</view>
+  </view>
+</view>

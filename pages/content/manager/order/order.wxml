@@ -1,0 +1,20 @@
+<view class="con">
+  <block wx:for="{{Orders}}" wx:key="index">
+    <view class="box" wx:if="{{item.status=='待发货'}}">
+      <image src="{{TempSrc[index]==null?'../../../../icon/err.png':TempSrc[index]}}" mode="aspectFit"></image>
+      <view class="text column">
+        <view>商品名：{{UserGoods[index].g_name}}</view>
+        <view>件数：{{item.g_num}}</view>
+        <view>收件人：{{item.u_address.userName}}</view>
+        <view>手机号：{{item.u_address.telNumber}}</view>
+        <view>收件地址：{{item.u_address.provinceName}}{{item.u_address.cityName}}{{item.u_address.countyName}}{{item.u_address.detailInfo}}</view>
+        <view>状态：{{item.status}}</view>
+      </view>
+      <view class="button_group row">
+        <view class="btn" style="background:#c1272d;border-bottom-left-radius: 30rpx;" data-_id="{{item._id}}" bindtap="CancelOrder">退款</view>
+        <view class="btn" style="background:#999999;border-bottom-right-radius:30rpx;" data-_id="{{item._id}}" bindtap="SendOrder">去发货</view>
+      </view>
+    </view>
+  </block>
+</view>
+<view bindtap="getOrders" id="refresh">刷新订单</view>

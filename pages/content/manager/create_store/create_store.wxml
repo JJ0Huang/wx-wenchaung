@@ -1,0 +1,46 @@
+<view class="con">
+  <view class="information">
+    <!-- 学校选择 -->
+    <picker range="{{s_array}}" range-key="s_name" bindchange="pickSchool">
+      <view class="box">
+        <label>学校:</label>
+        <view class="block">{{s_name}}</view>
+      </view>
+    </picker>
+    <view class="box">
+      <label>工作室LOGO：</label>
+      <view style="height:136rpx;" class="column">
+        <image src="{{tempsrc}}" style="width:136rpx;height:136rox" mode="aspectFit" bindtap="chooseLogo">
+      </image>
+      </view>
+    </view>
+    <view class="box">
+      <label>工作室名称：</label>
+      <input bindinput="getStoreName" placeholder="请输入..."></input>
+    </view>
+    <view class="box">
+      <label>工作室负责人：</label>
+      <input bindinput="getStoreBoss" placeholder="请输入..."></input>
+    </view>
+    <view class="box">
+      <label>负责人微信号：</label>
+      <input bindinput="getStoreWXID" placeholder="请输入..."></input>
+    </view>
+    <view class="box">
+      <label>工作室简介：</label>
+      <input bindinput="getStoreDescribe" placeholder="请输入..."></input>
+    </view>
+  </view>
+  <view class="images">
+    <view class="box" style="border:0;">
+      <label>认证资料提交:</label>
+    </view>
+    <cloud_chooseImage bind_getFileID="getFileIDArray">
+    </cloud_chooseImage>
+  </view>
+  <view class="submit_btn row">
+    <button style="margin-top:30rpx;" type="primary" bindtap="submitInfo">
+      提交申请
+    </button>
+  </view>
+</view>

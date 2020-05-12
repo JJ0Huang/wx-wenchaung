@@ -1,0 +1,55 @@
+@import '../../../../app.wxss';
+
+.submit_btn {
+  margin-top: 220rpx;
+  width: 750rpx;
+}
+
+.hide {
+  float: right;
+  width: 400rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.box {
+  width: 700rpx;
+  height: 136rpx;
+  border-bottom: 1rpx solid #cccccc;
+  margin-left: 30rpx;
+}
+
+.con {
+  width: 750rpx;
+  font-family: 'SimHei';
+  font-size: 30rpx;
+  padding-bottom: 200rpx;
+}
+
+label{
+  float:left;
+  width: 210rpx;
+  height: 40rpx;
+  margin-top: 48rpx;
+  border-right: 1rpx solid #cccccc;
+}
+
+input{
+  float:right;
+  width: 465rpx;
+  height: 30rpx;
+  padding-left: 20rpx;
+  margin-top: 53rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.block{
+  float:right;
+  width: 465rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  padding-left: 20rpx;
+  margin-top: 53rpx;
+}

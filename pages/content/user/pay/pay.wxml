@@ -1,0 +1,16 @@
+<view>
+  <view class="row">
+    <view class="button" bindtap="chooseAddress">
+      <text wx:if="{{address==null}}">请选择收获地址</text>
+      <text wx:else>{{address.provinceName}}{{address.cityName}}{{address.countyName}}{{address.detailInfo}}</text>
+    </view>
+  </view>
+  <view>
+    <text>应付款：￥{{total_price}}</text>
+  </view>
+  <view>
+    <button type="primary" bindtap="pay">
+      付款
+    </button>
+  </view>
+</view>

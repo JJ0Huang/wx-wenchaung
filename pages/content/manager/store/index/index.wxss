@@ -1,0 +1,24 @@
+@import '../../../../../app.wxss';
+.con{
+  width: 750rpx;
+  height: 100vh;
+  background: #eeeeee;
+}
+.Tarbar{
+  width: 750rpx;
+  height: 110rpx;
+  line-height: 110rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  color: #FFFFFF;
+  background: #08c27c;
+}
+.TopBox{
+  width: 360rpx;
+  height: 76rpx;
+  line-height: 76rpx;
+  text-align: center;
+  margin: 12rpx 0rpx;
+  background: #FFFFFF;
+}

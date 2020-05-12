@@ -1,0 +1,13 @@
+<view>
+  <view class="box">
+    <button type="primary" open-type="getUserInfo" data-user="business" bindgetuserinfo="setUserInfo">
+      商家登录
+    </button>
+  </view>
+  <view class="box">
+    <button style="background:#FF7F00;color:#FFFFFF" open-type="getUserInfo" data-user="user" bindgetuserinfo="setUserInfo">
+      用户登录
+    </button>
+  </view>
+</view>
+<view id="godmodel" bindtap="ToTest">god model</view>

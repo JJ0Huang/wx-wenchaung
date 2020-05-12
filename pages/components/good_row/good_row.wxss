@@ -1,0 +1,14 @@
+@import '../../../app.wxss';
+.con{
+	width: 750rpx;
+	margin-bottom: 10rpx;
+	padding: 10rpx;
+  font-family: "SimHei";
+  background: #ffffff;
+}
+.box_l{
+	width: 220rpx;
+}
+.box_r{
+	width: 520rpx;
+}

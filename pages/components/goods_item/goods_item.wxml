@@ -1,0 +1,25 @@
+<view class="good_box">
+	<image
+		src="{{g_image}}"
+		mode="widthFix"
+		style="width:300rpx;"
+		bindtap="toGoodDetail">
+	</image>
+
+	<view class="font">
+		<!-- 显示【标题】和【价格】 -->
+		<view class="good_text">
+			<view>{{g_name}}</view>
+			<view>￥{{g_price}}</view>
+		</view>
+		<!-- 显示【购物车】icon -->
+		<!-- <view class="shop">
+			<image
+				src="{{isInCart?img_carted:img_cart}}"
+				mode="widthFix"
+				class="icon"
+				bindtap="change_cart">
+			</image>
+		</view> -->
+	</view>
+</view>

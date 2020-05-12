@@ -1,0 +1,19 @@
+<view>
+	<view>
+    <row_box
+			wx:for="{{stores}}"
+			wx:key="index"
+      wx:if="{{item.lock==false}}"
+			title="{{item.st_name}}"
+      imageFileID="{{item.st_logo}}"
+      text="简介: {{item.describe}}"
+			data-st_id="{{item.st_id}}"
+			data-st_name="{{item.st_name}}"
+			bindtap="toGoodList">
+		</row_box>
+	</view>
+	<tarBar
+		tarBarList="{{tarBarList}}"
+		w="250">
+	</tarBar>
+</view>

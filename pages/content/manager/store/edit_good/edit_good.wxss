@@ -1,0 +1,48 @@
+@import '../../../../../app.wxss';
+.con{
+  width: 750rpx;
+  height: 100vh;
+  background: #f2f2f2;
+  color: #b3b3b3;
+  font-family: 'SimHei';
+  padding-bottom: 300rpx;
+}
+.box{
+  width: 670rpx;
+  height: 160rpx;
+  line-height: 160rpx;
+  float:left;
+  background: #ffffff;
+  margin-bottom: 10rpx;
+  padding: 0rpx 40rpx;
+}
+input{
+  border: 1rpx solid #b3b3b3;
+  width: 540rpx;
+  height: 55rpx;
+  border-radius: 10rpx;
+  margin-left: 20rpx;
+  margin-top: 52.5rpx;
+  padding: 0rpx 20rpx;
+}
+textarea{
+  border: 1rpx solid #b3b3b3;
+  width: 630rpx;
+  border-radius: 10rpx;
+  line-height: 40rpx;
+  padding: 20rpx;
+}
+#confirm{
+  width: 750rpx;
+  height: 110rpx;
+  line-height: 110rpx;
+  text-align: center;
+  color: #ffffff;
+  background: #08c27c;
+  background: 08c27c;
+  position: fixed;
+  bottom: 0;
+}
+label{
+  color: #333333;
+}

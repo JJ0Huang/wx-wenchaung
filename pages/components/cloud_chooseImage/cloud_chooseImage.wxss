@@ -1,0 +1,9 @@
+/* pages/components/cloud_chooseImage/cloud_chooseImage.wxss */
+.con{
+  width: 750rpx;
+}
+image{
+  width:220rpx;
+  height:220rpx;
+  padding:15rpx;
+}

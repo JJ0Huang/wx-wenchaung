@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "order_box": "../../../components/order_box/order_box"
+  }
+}

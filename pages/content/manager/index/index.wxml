@@ -1,0 +1,30 @@
+<view class="con">
+  <view id="background1"></view>
+  <view class="box1 column">
+    <view class="row1 row">
+      <image src="{{tempsrc==undefind?'../../../../icon/err.png':tempsrc}}" style="width:100rpx;height:100rpx;margin-right:26rpx;" mode="aspectFit">
+      </image>
+      <view style="width:330rpx">
+        <view class="big">{{store.st_name}}</view>
+        <view class="small" style="margin-top:10rpx;" wx:if="{{store!=null}}">负责人:{{store.st_boss}}</view>
+      </view>
+      <view>
+        <view id="certificate" style="background:{{store.lock==false?'#c1272d':'#cccccc'}}" bindtap="ToApplication">{{store.lock==false?'已认证':'未认证'}}</view>
+        <view></view>
+      </view>
+    </view>
+    <view class="row2 row small">
+      <view>今日订单数</view>
+      <view style="color:black;width:110rpx;margin-left:49rpx;">{{TotalNum}}</view>
+      <view>今日订单金额</view>
+      <view style="color:black;margin-left:49rpx;">{{TotalPrice}}</view>
+    </view>
+  </view>
+  <view class="box2 row">
+    <view class="img_box" wx:for="{{icons}}" wx:key="index" bindtap="To" data-_to="{{item.to}}">
+      <image src="{{item.src}}" style="width:80rpx;" mode="widthFix"></image>
+      <view class="icon_text">{{item.text}}</view>
+    </view>
+  </view>
+</view>
+<tarBar tarBarList="{{tarBarList}}" w="375"></tarBar>

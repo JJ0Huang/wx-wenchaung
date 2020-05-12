@@ -1,0 +1,18 @@
+<view class="con column">
+  <view class="row">
+    <image src="{{lock=='false'?'../../../../icon/true.png':'../../../../icon/false.png'}}"
+      style="width:320rpx;height:320rpx;"
+      mode="aspectFill"></image>
+  </view>
+  <view wx:if="{{lock=='false'}}" class="row" style="height:275rpx;line-height:275rpx;color:#08c27c">
+    审核已通过，赶紧去经营工作室吧！
+  </view>
+  <view wx:if="{{lock=='true'}}" class="row" style="height:275rpx;line-height:275rpx;color:#c2272f">
+    若5个工作日内仍为此状态，则可进行重新认证
+  </view>
+  <view class="row" wx:if="{{lock=='true'}}">
+  <view class="re_btn" style="background:#c2272f;color:#FFFFFF" bindtap="ReApplication">
+    重新认证
+  </view>
+  </view>
+</view>

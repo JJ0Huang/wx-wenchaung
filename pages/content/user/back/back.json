@@ -1,0 +1,7 @@
+{
+	"component": true,
+	"usingComponents": {
+		"back_home": "../../../components/back_home/back_home",
+    "tarBar": "../../../components/tarBar/tarBar"
+	}
+}

@@ -1,0 +1,33 @@
+/* pages/content/user/cart/cart.wxss */
+@import '../../../../app.wxss';
+.con{
+  font-family: 'SimHei'
+}
+.fix-bottom{
+	width: 750rpx;
+	height: 210rpx;
+	position: fixed;
+	bottom: 0;
+  border-bottom: 1rpx solid #f0f0f0;
+  border-top: 1rpx solid #f0f0f0;
+}
+.font_block{
+  font-size:36rpx;
+  float:left;
+  height:100rpx;
+}
+.pay_block{
+  height: 100rpx;
+  float: right;
+  font-size: 36rpx;
+  color: white;
+  background: #B22222;
+  padding: 0rpx 80rpx;
+}
+.store_box{
+  width: 450rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-top: 40rpx;
+  color: #606226;
+}

@@ -1,0 +1,32 @@
+@import '../../../../app.wxss';
+.con{
+  width: 750rpx;
+  height: 100vh;
+  background: #f4f4f6;
+  font-family: 'SimHei'
+}
+.image{
+	width: 160rpx;
+	height: 160rpx;
+	border-radius: 80rpx;
+}
+.box_user{
+	width: 750rpx;
+	text-align: center;
+	margin-bottom: 30rpx;
+  background: #08c27c;
+  padding: 40rpx 0rpx;
+  color: white;
+  font-weight: bold;
+}
+
+.box{
+  background: #FFFFFF;
+  width: 694rpx;
+  height: 92rpx;
+  border-radius: 30rpx;
+  text-align: center;
+  line-height: 92rpx;
+  margin-top: 30rpx;
+  color: #333333;
+}

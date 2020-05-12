@@ -1,0 +1,13 @@
+/* pages/content/manager/application/application.wxss */
+@import '../../../../app.wxss';
+.con{
+  width: 750rpx;
+  height: 100vh;
+}
+.re_btn{
+  width: 550rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border-radius: 50rpx;
+}

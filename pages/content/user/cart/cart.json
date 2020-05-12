@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+		"cart_box":"../../../components/cart_box/cart_box",
+		"tarBar": "../../../components/tarBar/tarBar"
+	}
+}

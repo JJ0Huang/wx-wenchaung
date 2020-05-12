@@ -1,0 +1,44 @@
+<view class="con">
+  <!-- 顶部头像 -->
+  <view class="box_user">
+    <image class="image" src="{{userInfo.avatarUrl}}">
+    </image>
+    <view>
+      {{userInfo.nickName}}
+    </view>
+  </view>
+  <!-- 我的订单 -->
+  <view class="row">
+    <view class="box" style="height:260rpx;">
+      <view id="myorder">
+        <view style="float:left">我的订单</view>
+        <view class="font_99" style="float:right;font-size:20rpx;margin-right:15rpx;">查看更多 ></view>
+      </view>
+      <!-- 我的订单图标 -->
+      <view id="icons_box" class="row">
+        <view class="column" bindtap="toUserOrder" data-_src="{{item.text}}" wx:for="{{icons}}" wx:key="index" style="width:125rpx;text-align: center;">
+          <image src="{{item.src}}" style="width:60rpx;margin-left:32.5rpx;" mode="widthFix">
+          </image>
+          <view class="font_99" style="width:120rpx;text-align:center;margin-top:-18rpx;">
+            {{item.text}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 地址管理 -->
+  <view class="row">
+    <view class="box" bindtap="toEditAddress">
+      地址管理
+    </view>
+  </view>
+  <!-- 退出登陆 -->
+  <view class="row">
+    <view class="box" bindtap="toBack">
+      退出登录
+    </view>
+  </view>
+  <!-- 导航栏 -->
+  <tarBar tarBarList="{{tarBarList}}" w="250">
+  </tarBar>
+</view>

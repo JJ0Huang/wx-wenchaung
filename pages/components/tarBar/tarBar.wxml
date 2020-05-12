@@ -1,0 +1,22 @@
+<view class="con">
+<!-- 只需要传入一个包含text和src的数组即可 -->
+	<view
+		style="float:left;width:{{w}}rpx;"
+		wx:for="{{tarBarList}}"
+		wx:key="index"
+		data-src="{{item.src}}"
+		bindtap="navigateTo">
+    <view class="content">
+      <view>
+        <image
+          src="{{item.image==undefind?'../../../icon/err.png':item.image}}"
+          style="width:60rpx;"
+          mode="widthFix">
+        </image>
+      </view>
+      <view style="font-size:20rpx;color:{{item.color==undefind?'black':item.color}}">
+        {{item.text}}
+      </view>
+    </view>
+	</view>
+</view>

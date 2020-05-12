@@ -1,0 +1,14 @@
+<view class="con row">
+	<view 
+		class="box_l column">
+		<image
+			src="{{img_src==null?'../../../icon/err.png':img_src}}"
+			mode="widthFix"
+			style="width:200rpx">
+		</image>
+	</view>
+	<view
+		class="box_r column">
+		{{good.g_name}}
+	</view>
+</view>

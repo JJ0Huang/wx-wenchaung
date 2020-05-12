@@ -1,0 +1,51 @@
+@import '../../../../app.wxss';
+.con{
+  min-height: 100vh;
+  background: #e6e6e6;
+  padding-bottom: 110rpx;
+  font-family: 'SimHei'
+}
+swiper{
+	width:750rpx;
+	height: 790rpx;
+  text-align: center;
+}
+image{
+  width: 750rpx;
+  height:790rpx;
+}
+.box{
+  padding: 25rpx 40rpx;
+  width: 670rpx;
+  background: white;
+  margin-bottom: 10rpx;
+}
+.box1{
+  height: 160rpx;
+  border-top: 1rpx solid #929292;
+}
+.box2{
+  height: 120rpx;
+}
+.money{
+  color: #ed1c25;
+  font-size: 40rpx;
+  margin-bottom: 27rpx;
+}
+.tarbar_box{
+  width: 750rpx;
+  height: 92rpx;
+  line-height: 92rpx;
+  position: fixed;
+  bottom: 0;
+  background: #f2f2f2;
+}
+.tarbar_item{
+  width: 208rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  margin-top: 12rpx;
+  color: #FFFFFF;
+  border-radius: 10rpx;
+  text-align: center;
+}

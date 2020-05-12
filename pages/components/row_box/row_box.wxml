@@ -1,0 +1,17 @@
+<view class="con">
+	<view class="box"
+    style="margin-left:100rpx;">
+    <image
+      src="{{image_src}}"
+      mode="widthFix">
+    </image>
+  </view>
+  <view class="box" style="margin-left:40rpx;width:370rpx;">
+    <view class="title" style="color:{{color}}">
+      {{title}}
+    </view>
+    <view wx:if="{{text!=''}}" style="color:#999999;font-size:20rpx;">
+      {{text}}
+    </view>
+  </view>
+</view>

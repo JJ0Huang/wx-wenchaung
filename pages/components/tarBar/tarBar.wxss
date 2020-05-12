@@ -1,0 +1,16 @@
+.con{
+	position: fixed;
+	bottom: 0;
+	width: 750rpx;
+	height: 110rpx;
+	background: #F2F2F2;
+	text-align: center;
+  font-family: "SimHei"
+}
+.content{
+  display: flex;
+	height: 110rpx;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}

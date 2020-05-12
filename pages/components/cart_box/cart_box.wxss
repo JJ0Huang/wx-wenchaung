@@ -1,0 +1,7 @@
+/* pages/components/cart_box/cart_box.wxss */
+@import '../../../app.wxss';
+.con{
+  width: 750rpx;
+  padding: 40rpx 0rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+}

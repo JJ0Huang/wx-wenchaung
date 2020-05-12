@@ -1,0 +1,15 @@
+.box{
+	width: 750rpx;
+	height: 40rpx;
+	margin-top: 350rpx;
+}
+#godmodel{
+  width: 750rpx;
+  height: 30rpx;
+  font-size: 20rpx;
+  line-height: 30rpx;
+  color: #d3d3d3;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}

@@ -1,0 +1,3 @@
+<view>
+  <button bindtap="Agree">通过所有店铺申请</button>
+</view>

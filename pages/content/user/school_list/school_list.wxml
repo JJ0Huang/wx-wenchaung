@@ -1,0 +1,17 @@
+<view>
+  <swiper_box></swiper_box>
+	<row_box
+		wx:for="{{schools}}"
+		wx:key="index"
+		title="{{item.s_name}}"
+    imageFileID="{{item.s_imageFileID}}"
+    color="{{item.color}}"
+		data-s_id="{{item.s_id}}"
+		data-s_name="{{item.s_name}}"
+		bindtap="toStoreList">
+	</row_box>
+	<tarBar
+		tarBarList="{{tarBarList}}"
+		w="250">
+	</tarBar>
+</view>

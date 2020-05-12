@@ -1,0 +1,23 @@
+.con{
+  width: 750rpx;
+  min-height: 160rpx;
+  padding: 40rpx 0rpx;
+  border-bottom: 1rpx solid #999999;
+  font-family: "SimHei"
+}
+.box{
+  height: 170rpx;
+  float:left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+image{
+  width: 160rpx;
+  border-radius: 20rpx;
+}
+.title{
+  height: 50rpx;
+  line-height: 60rpx;
+  font-size: 37rpx;
+}

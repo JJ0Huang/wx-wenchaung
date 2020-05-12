@@ -1,0 +1,15 @@
+<view class="con">
+  <!-- 顶部头像 -->
+  <view class="box_user">
+    <image class="image" src="{{userInfo.avatarUrl}}"></image>
+    <view>{{userInfo.nickName}}</view>
+  </view>
+  <!-- 退出登陆 -->
+  <view class="row">
+    <view class="box" bindtap="toBack">退出登录</view>
+  </view>
+  <view class="row">
+    <view class="box" style="color:#ac0000" bindtap="ShowDelete">注销工作室</view>
+  </view>
+</view>
+<tarBar tarBarList="{{tarBarList}}" w="375"></tarBar>

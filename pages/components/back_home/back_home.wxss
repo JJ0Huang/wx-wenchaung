@@ -1,0 +1,7 @@
+.con{
+	width: 750rpx;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}

@@ -1,0 +1,7 @@
+<view class="con">
+	<button
+		type="primary"
+		bindtap="back">
+		退出
+	</button>
+</view>

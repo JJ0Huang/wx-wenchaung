@@ -1,0 +1,61 @@
+<view class="con">
+  <!-- 购物车为空的时候展示 -->
+  <view wx:if="{{empty==true}}"
+    style="padding:150rpx 100rpx;">
+    <image
+      src="../../../../icon/empty.png"
+      style="width:550rpx;"
+      mode="widthFix">
+    </image>
+  </view>
+  <!-- 显示店铺名 -->
+  <!-- <view class="row store_box" wx:if="{{empty==false}}">
+    <image
+      src="../../../../icon/store.png"
+      style="width:50rpx;margin-right:30rpx;"
+      mode="widthFix">
+    </image>
+    广州中医药大学·谋士
+  </view> -->
+  <view>
+    <!-- 购物列表 -->
+    <view>
+      <cart_box
+        wx:for="{{tempFilePath}}"
+        wx:key="index"
+        index="{{index}}"
+        image="{{item}}"
+        text1="{{good[index].g_name}}"
+        text3="{{good[index].g_price}}元"
+        num="{{cart[index].g_num}}"
+        bind:changeNum="changeNum"
+        bind:getZero="getZero">
+      </cart_box>
+    </view>
+    <!-- 结算行 -->
+    <view 
+      class="fix-bottom" 
+      wx:if="{{total_price!=0}}">
+      <view 
+        class="column font_block"
+        style="margin-left:40rpx;">
+        待支付：    
+      </view>
+      <view
+        class="column font_block"
+        style="color:#B22222">
+        {{total_price}} 元    
+      </view>
+      <view 
+        class="column pay_block"
+        bindtap="toPay">
+        结   算
+      </view>
+    </view>
+    <!-- 导航栏 -->
+    <tarBar
+      tarBarList="{{tarBarList}}"
+      w="250">
+    </tarBar>
+  </view>
+</view>

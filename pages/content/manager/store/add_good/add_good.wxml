@@ -1,0 +1,36 @@
+<view class="con">
+  <view class="image_box">
+    <cloud_chooseImage bind_getFileID="getFileID" BaseImage="../../../../../../../icon/photo.png">
+    </cloud_chooseImage>
+  </view>
+  <view class="box row">
+    <label>标题</label>
+    <input bindinput="e_name"></input>
+  </view>
+  <view class="box row">
+    <label>价格</label>
+    <input  type="digit" bindinput="e_price" placeholder="以人名币为单位"></input>
+  </view>
+  <view class="box" style="height:600rpx;">
+    <label>商品描述</label>
+    <textarea maxlength="-1" bindinput="e_describe">
+    </textarea>
+  </view>
+  <view id="confirm" bindtap="addGood">上架出售</view>
+  <!-- <view>
+    <label>商品名</label>
+    <input class="input" bindinput="e_name">
+    </input>
+    <label>价格</label>
+    <input type="digit" class="input" bindinput="e_price">
+    </input>
+    <label>商品描述</label>
+    <textarea maxlength="-1" class="textarea" bindinput="e_describe">
+    </textarea>
+  </view>
+  <view class="row" style="margin-top:300rpx;width:750rpx;">
+    <button type="primary" bindtap="addGood">
+      确认新增
+    </button>
+  </view> -->
+</view>

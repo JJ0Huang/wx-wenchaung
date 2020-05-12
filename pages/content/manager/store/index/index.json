@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+		"good_row": "../../../components/good_row/good_row"
+	}
+}

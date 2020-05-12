@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+
+    "pages/content/user/school_list/school_list",
+    "pages/content/user/sotre_list/sotre_list",
+    "pages/content/user/good_list/good_list",
+    "pages/content/user/good_detail/good_detail",
+    "pages/content/user/back/back",
+    "pages/content/user/cart/cart",
+    "pages/content/user/pay/pay",
+    "pages/content/user/userOrder/userOrder",
+
+    "pages/content/manager/index/index",
+    "pages/content/manager/setting/setting",
+    "pages/content/manager/application/application",
+    "pages/content/manager/create_store/create_store",
+    "pages/content/manager/store/index/index",
+    "pages/content/manager/store/add_good/add_good",
+    "pages/content/manager/order/order",
+    "pages/content/manager/store/edit_good/edit_good"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "校园文创集",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "请您允许小程序访问您的位置信息"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,19 @@
+<view
+  style="width:750rpx;overflow: hidden;"
+  class="con">
+  <swiper
+    autoplay="true"
+    interval="3000"
+    circular="true">
+    <swiper-item
+      class="swiper-item"
+      wx:for="{{images}}"
+      wx:key="index">
+      <image
+        src="{{item.src}}"
+        style="width:750rpx;height:{{height}}rpx;border-radius:0rpx;"
+        mode="scaleToFill">
+      </image>
+    </swiper-item>
+  </swiper>
+</view>
